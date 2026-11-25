@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="introduction" aria-labelledby="hello">
+  <p class="eyebrow">Notes & explorations</p>
+  <h1 id="hello">Learning.<br>Making.<br>Figuring things out.</h1>
+  <p class="intro-copy">I’m Eric. I work in information security, and I’m curious about AI, useful tools, and what I can learn by building things.</p>
+  <a class="text-link" href="{{ '/about/' | relative_url }}">A little more about me <span aria-hidden="true">↗</span></a>
+</section>
+<section class="home-section" aria-labelledby="writing-heading">
+  <div class="section-heading"><h2 id="writing-heading">Writing</h2><a href="{{ '/writing/' | relative_url }}">All notes <span aria-hidden="true">↗</span></a></div>
+  {% if site.posts.size > 0 %}
+  <ul class="writing-list">{% for post in site.posts limit: 6 %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y · %m' }}</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}</ul>
+  {% else %}
+  <div class="empty-note"><p>This is a new notebook.</p><p>I’m making room here for things I learn and ideas I want to work through. The first notes are still to come.</p></div>
+  {% endif %}
+</section>
+<section class="home-section" aria-labelledby="lately-heading">
+  <div class="section-heading"><h2 id="lately-heading">Lately</h2><a href="{{ '/now/' | relative_url }}">Now <span aria-hidden="true">↗</span></a></div>
+  <div class="lately-grid"><div><h3>Thinking about</h3><p>AI governance, agent permissions, and how we decide which tools to trust.</p></div><div><h3>Learning by doing</h3><p>Building this site and making my first contribution to <a href="https://github.com/fxgl/steamac/pull/121">an open-source project</a>.</p></div></div>
+</section>

@@ -1,0 +1,19 @@
+title: Eric Garcia
+description: Notes on security, AI, and learning by building.
+url: "https://ericonyourphone.github.io"
+baseurl: ""
+lang: en
+timezone: America/Chicago
+markdown: kramdown
+permalink: /writing/:title/
+exclude: [README.md, Gemfile, Gemfile.lock]
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

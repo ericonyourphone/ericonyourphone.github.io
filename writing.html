@@ -1,0 +1,12 @@
+---
+title: Writing
+permalink: /writing/
+---
+<p class="eyebrow">Notes & ideas</p>
+<h1>Writing</h1>
+{% if site.posts.size > 0 %}
+<ul class="writing-list">{% for post in site.posts %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y · %m' }}</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endfor %}</ul>
+{% else %}
+<p>No published notes yet. I’m starting with a place to write, then taking it one piece at a time.</p>
+<p>For now, here’s <a href="{{ '/now/' | relative_url }}">what I’m spending time on</a>.</p>
+{% endif %}
