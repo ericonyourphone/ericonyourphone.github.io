@@ -6,6 +6,8 @@ permalink: /about/
 
 # Hi, I’m Eric.
 
+<img class="profile-portrait about-portrait" src="/assets/profile.jpg" width="768" height="1024" alt="Eric holding a cup with a white cat perched on his hat.">
+
 Husband & Dad ❤️
 
 GRC by day. Builder by choice.
