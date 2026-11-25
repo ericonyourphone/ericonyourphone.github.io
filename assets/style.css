@@ -1,11 +1,13 @@
 :root {
-  color-scheme:light dark;
-  --paper:#faf9f6;
-  --ink:#282b27;
-  --muted:#686b63;
-  --line:#dfdfd6;
-  --accent:#28634f;
-  --wash:#f0f0e9;
+  color-scheme:dark;
+  --paper:#252830;
+  --ink:#e5e6eb;
+  --muted:#abb0b9;
+  --line:#444851;
+  --accent:#82b4ff;
+  --wash:#343840;
+  --pink:#ff7aa4;
+  --mint:#a5d6a7;
   --serif:Charter,'Bitstream Charter','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 }
@@ -25,8 +27,8 @@ body {
   -webkit-font-smoothing:antialiased;
 }
 ::selection {
-  background:#cee1d3;
-  color:#183326;
+  background:#484b54;
+  color:#ffffff;
 }
 a {
   color:var(--accent);
@@ -64,7 +66,7 @@ a:focus-visible {
   white-space:nowrap;
 }
 .wordmark-dot {
-  color:var(--accent);
+  color:var(--mint);
 }
 nav {
   display:flex;
@@ -88,7 +90,7 @@ nav a[aria-current] {
   font-weight:650;
   letter-spacing:1.8px;
   text-transform:uppercase;
-  color:var(--accent);
+  color:var(--mint);
   margin:0 0 23px;
 }
 h1,h2,h3 {
@@ -102,7 +104,7 @@ h1 {
   margin:0 0 28px;
 }
 .introduction h1 {
-  font-size:67px;
+  color:var(--pink);  font-size:67px;
   line-height:1.07;
   letter-spacing:-2.5px;
 }
@@ -287,20 +289,6 @@ blockquote {
 img {
   max-width:100%;
   height:auto;
-}
-@media(prefers-color-scheme:dark) {
-  :root {
-    --paper:#171c19;
-    --ink:#e1e4dc;
-    --muted:#a3aba1;
-    --line:#363f37;
-    --accent:#a1c5aa;
-    --wash:#242c25;
-  }
-  ::selection {
-    background:#38533f;
-    color:#f1f5ee;
-  }
 }
 @media(max-width:600px) {
   .site-shell {

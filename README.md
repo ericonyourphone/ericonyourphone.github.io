@@ -23,7 +23,7 @@ Only create a post when you want it published. The home page, writing archive, a
 
 ## Design
 
-Layouts live in `_layouts`; styling lives in `assets/style.css`. The site follows the system’s light/dark preference and works without JavaScript.
+Layouts live in `_layouts`; styling lives in `assets/style.css`. The site uses a dark, terminal-inspired palette and works without JavaScript.
 
 ## Publishing
 
